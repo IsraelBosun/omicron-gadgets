@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+body{
+  font-family: 'Montserrat', sans-serif; 
 }
 .gad{
   font-weight: bold;
@@ -10,26 +14,39 @@
 .bespoke{
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  color: white;
+}
+.icons{
+  justify-content: space-around;
+  align-items: center;
 }
 .middle{
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48;
-  font-weight: 2px;
-  font-size: 30px;
-  margin: 0 5px;
-  color: black;
+a{
+  color: white;
+  text-decoration: none;
+}
+.store{
+  color: white;
+  background-color: red;
+  padding: 5px 19px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.omg{
+  width: 50px;
 }
 .person{
     text-decoration: none;
     color: black;
+}
+.human{
+  /* margin-bottom: 7px; */
+  font-size: 30px;
 }
 .btn1{
     color: white;
@@ -57,9 +74,7 @@
   align-items: flex-end;
   
 }
-.cardss{
-  align-items: center;
-}
+
 .card-title{
   text-align: center;
   font-weight: bold;
@@ -71,21 +86,12 @@
  justify-self: center;
  border-radius: 30px;
 }
-.money{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .card-text{
   font-weight: bold;
   font-size: 30px;
 }
-.sixty{
-  text-decoration: line-through;
-}
-/* .col-lg:hover{
-  transform: scale(1.2);
-} */
+
 .col-lg{
   max-width: fit-content;
   max-height: 300px;
