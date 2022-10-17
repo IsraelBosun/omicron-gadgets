@@ -97,26 +97,26 @@ a{
   max-height: 300px;
 }
 .row{
-  gap: 300px;
+  gap: 1px 15px;
 }
 .head2{
   position: relative;
   align-items: center;
-  margin-top: 10px; 
+  margin-top: 15px; 
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif; 
 }
 .head3{
   text-align: center;
-  font-size: 15px;
+  font-size: 10px;
 }
 .card-img{
   margin-top: 20px;
-  margin-left: 15px;
-  width: 200px;
+  margin-left: 30px;
+  width: 100px;
   justify-content: center;
 }
 .card-body{
@@ -133,20 +133,20 @@ a{
   font-family: 'Fuzzy Bubbles', cursive;
 }
 .buttonred{
-  width: 90px;
-  height: 30px;
+  width: 45px;
+  height: 15px;
   margin-top: 20px;
   border-radius: 30px;
   background-color: red;
   border: red;
   color: white;
-  font-size: 10px;
+  font-size: 5px;
   font-weight: bold;
   transition-duration: 0.4s;
   
 }
 .forty{
-  font-size: 20px;
+  font-size: 10px;
   font-family: 'Fuzzy Bubbles', cursive;
 }
 .card{
@@ -160,6 +160,7 @@ a{
   box-shadow: -2px -2px 8px  6px rgb(240, 130, 130);
 }
 .buttonred:hover{
+  transition-duration: 0.2s;
   transform: scale(1.1) ;
   box-shadow: 1px 5px 6px  1px rgb(240, 130, 130);
 }
