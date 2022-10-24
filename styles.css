@@ -131,6 +131,7 @@ a{
   margin-left: 30px;
   width: 100px;
   justify-content: center;
+  
 }
 
 .cardbody{
@@ -172,4 +173,37 @@ a{
   width: 200px;
   height: 200px;
   border: 2px solid red;
+}
+.footer{
+  font-family: 'Fuzzy Bubbles', cursive;
+  background-color: rgb(243, 43, 43);
+  color: white;
+  height: 100%;
+}
+.home{
+  width: 500px;
+  color: white;
+  
+}
+.sign-up{
+  cursor: pointer;
+  border: 2px solid red;
+  color: red;
+  background-color: white;
+}
+.sign-up:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+  color: red;
+}
+.fa-facebook, .fa-instagram, .fa-twitter{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+}
+.facebook, .instagram, .twitter{
+  display: inline;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover{
+  color: blue;
 }
