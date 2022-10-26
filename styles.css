@@ -6,6 +6,10 @@
 }
 body{
   font-family: 'Montserrat', sans-serif; 
+  
+  justify-content: center;
+  align-content: center;
+  background-color: #F0F0F3;
 }
 .gad{
   font-weight: bold;
@@ -29,6 +33,11 @@ body{
 .navbar-nav{
  justify-content: end;
  gap: 50px;
+}
+.cardss{
+  display: flex;
+  align-content: center;
+  
 }
 
 
@@ -67,14 +76,19 @@ a{
   /* margin-bottom: 7px; */
   font-size: 30px;
 }
+.person:hover{
+  color: red;
+}
 .btn1{
     color: white;
     border-radius: 100px;
     width: min-content;
     font-weight: bold;
     font-size: 15px;
-    display: flex;
-    
+    display: flex; 
+}
+.btn1:hover{
+  background-color: red;
 }
 
 #material-symbols-outlined {
@@ -138,35 +152,41 @@ a{
   display: flex;
   justify-content: space-around;
   align-items:center;
+  margin-top: 12px;
+  gap: 0px;
+  
 }
 .fortyfive{
   font-size: 17px;
   margin-top: 5px;
 }
 .buttonred{
-  width: 65px;
-  height: 30px;
+  width: 60px;
+  height: 25px;
   font-size: 9px;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: red;
-  border: red;
+  border: none;
   color: white;
   font-weight: bold;
   transition-duration: 0.4s;
+  box-shadow: 5px 5px 7px 0  #AEAEC0;
 }
 .card{
+  background-color: #F0F0F3 ;
+  border: none;
   height: 200px;
-  border-radius: 30px;
+  border-radius: 10px;
   transition-duration: 0.2s;
-  box-shadow: 5px 1px 8px  6px rgb(193, 193, 193);
+  box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
 }
 .card:hover{
-  /* transform: scale(1.1); */
-  box-shadow: -2px -2px 8px  6px rgb(240, 130, 130);
+  /* transform: scale(1.1);
+  box-shadow: -2px -2px 8px  6px rgb(240, 130, 130); */
 }
 .buttonred:hover{
   transition-duration: 0.2s;
-  transform: scale(1.1) ;
+  transform: scale(1.05) ;
   box-shadow: 1px 5px 6px  1px rgb(240, 130, 130);
 }
 .carda{
@@ -174,6 +194,64 @@ a{
   height: 200px;
   border: 2px solid red;
 }
+.gimbal{
+  width: 160px;
+  height: 100px;
+}
+.imageWidth{
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 50px;
+}
+.imageWidth:hover{
+  transition-duration: 0.3s;
+  transform: scale(1.1);
+}
+
+/* TESTING STARTS */
+
+.testing{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  }
+.practise{
+  height: 300px;
+  background-color: #F0F0F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.morph{
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  box-shadow: -8px -8px 24px 0 #FFFFFF, 8px 8px 24px #AEAEC0, -8px -8px 8px 0 #AEAEC0 inset, 8px 8px 8px 0 #FFFFFF inset ;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  }
+
+
+.neu{
+  width: 200px;
+  height: 200px;
+  align-self: center;
+  border-radius: 50px;
+  box-shadow: 12px 12px 25px 0 rgb(41, 40, 40) , -11px -11px 25px 0 rgb(232, 186, 186), 12px 12px 25px 0 rgb(41, 40, 40) inset,  -11px -11px 25px 0 rgb(232, 186, 186) inset ;
+  cursor: pointer;
+}
+.neu:hover{
+  transition: 0.4s;
+  transform: scale(1.1);
+  box-shadow: 12px 12px 25px 0 rgb(41, 40, 40)inset , -11px -11px 25px 0 rgb(232, 186, 186) inset;
+}
+
+/* TESTING STOPS */
+
+/* Footer */
 .footer{
   font-family: 'Fuzzy Bubbles', cursive;
   background-color: rgb(243, 43, 43);
@@ -207,3 +285,7 @@ a{
 .fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover{
   color: blue;
 }
+.home > h1 {
+  color: black;
+}
+
