@@ -37,7 +37,7 @@ body{
  margin: 0 30%;
 }
 .collapse{
-  gap: px;
+  display: none;
 }
 .cardss{
   display: flex;
@@ -131,6 +131,11 @@ a{
       gap: 5px;
     }
 }
+/* @media(max-width:992px){
+  .collapse{
+    display:;
+  }
+} */
 
 .card-title{
   text-align: center;
@@ -143,8 +148,11 @@ a{
  justify-self: center;
  border-radius: 30px;
 }
-.row{
-  gap: 10px;
+.container .row{
+  justify-content: space-between;
+  column-gap: 100px;
+  width: max-content;
+  
 }
 .headerrow{
   width: 200px;
@@ -276,7 +284,7 @@ a{
 /* TESTING STOPS */
 
 /* Footer */
-.footer{
+/* .footer{
   font-family: 'Fuzzy Bubbles', cursive;
   background-color: rgb(243, 43, 43);
   color: white;
@@ -311,22 +319,23 @@ a{
 }
 .home > h1 {
   color: black;
-}
+} */
 
 /* Footer CSS */
 footer{
-  padding: 40px;
+  margin-top: 80px;
 }
-/* .container-fluid{
- 
+.container-fluid{
+  border-top: 2px solid blue;
   height: max-content;
-  background-color: red;
- 
   justify-content: space-between;
   
-} */
-.row{
-  justify-content: space-between;
+}
+.container-fluid .row{
+  margin: 0 2%;
+  padding-top: 20px;
+  column-gap: 50px;
+  row-gap: 30px;
 }
 ul{
   list-style: none;
@@ -352,7 +361,7 @@ a:hover{
 .line{
  height: 2px;
  width: 40px;
- background-color: blue;
+ background-color: red;
  border-radius: 90px;
 }
 .row > div{
