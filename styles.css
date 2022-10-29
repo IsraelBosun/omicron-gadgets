@@ -31,8 +31,13 @@ body{
   justify-content: space-around;
 }
 .navbar-nav{
- justify-content: end;
+ justify-items: center;
  gap: 50px;
+ width: 20px;
+ margin: 0 30%;
+}
+.collapse{
+  gap: px;
 }
 .cardss{
   display: flex;
@@ -105,7 +110,26 @@ a{
   display:flex;
   gap: 30px;
   align-items: flex-end;
-  
+  }
+
+  @media(max-width:1024px){
+    .collapse{
+      display: flex;
+      flex-direction: column;
+      display: inline;
+      text-align: center;
+      width: max-content;
+  }
+    .navbar-nav{
+      width: max-content;
+      justify-content: center;
+      gap: 3px;
+      margin: 0 auto;
+    }
+    .icons{
+      justify-content: center;
+      gap: 5px;
+    }
 }
 
 .card-title{
@@ -204,7 +228,7 @@ a{
   margin: 0 50px;
 }
 .imageWidth:hover{
-  transition-duration: 0.3s;
+  transition: 0.3s ease-in-out;
   transform: scale(1.1);
 }
 
@@ -287,5 +311,67 @@ a{
 }
 .home > h1 {
   color: black;
+}
+
+/* Footer CSS */
+footer{
+  padding: 40px;
+}
+/* .container-fluid{
+ 
+  height: max-content;
+  background-color: red;
+ 
+  justify-content: space-between;
+  
+} */
+.row{
+  justify-content: space-between;
+}
+ul{
+  list-style: none;
+}
+a{
+  width: max-content;
+  text-decoration: none;
+}
+a:hover{
+  transition: 0.2s;
+  color: white;
+  text-decoration: underline;
+}
+.lists, .lists2, .lists3{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+.icon{
+  padding-top: 10px;
+}
+.line{
+ height: 2px;
+ width: 40px;
+ background-color: blue;
+ border-radius: 90px;
+}
+.row > div{
+  width: 150px;
+}
+i:hover{
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+.fa-facebook:hover{
+  color: blue;
+}
+.fa-instagram:hover{
+  color: rgb(255, 200, 0);
+}
+.fa-twitter:hover{
+  color: blue;
+}
+.fa-linkedin:hover{
+  color: blue;
 }
 
