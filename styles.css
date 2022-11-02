@@ -344,7 +344,7 @@ a{
   width: max-content;
   text-decoration: none;
 }
-a:hover{
+.lists3 a:hover{
   transition: 0.2s;
   color: white;
   text-decoration: underline;

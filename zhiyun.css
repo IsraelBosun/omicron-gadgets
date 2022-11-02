@@ -1,0 +1,216 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 245);
+    
+}
+.main-container{
+    background-color: white;
+    width: 1166px;
+    height: 570px;
+    margin: 450px auto;
+    justify-items: center;
+}
+.major-watch{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.major-image{
+    border: transparent;
+    width: 583px;
+    display: flex;
+    justify-content: center;
+    
+      
+}
+.black-watch{
+    width: 200px;
+    position: relative;
+    top: 30px;
+}
+.sub-images{
+    display: flex;
+    gap: 5px;
+    width:583px;
+    padding-top: 50px;
+    position: ;
+}
+.sub-images div{
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 86px;
+    border: 1px solid rgb(235, 112, 112);
+    display: flex;
+    justify-content: center;
+}
+div .watch{
+    height: min-content;
+    
+}
+.main-container{
+    display: flex;
+}
+.left-container{
+    padding-top: 40px;
+}
+.price, .rating-icons, .no-of-ratings, .main-text, .two-buttons{
+    padding-top: 20px;
+}
+.no-of-ratings{
+    position: relative;
+    float: right;
+    right: 280px;
+    bottom: 20px;
+}
+.rating-icons, .no-of-ratings{
+    font-size: 24px;
+}
+.main-text{
+    font-size: 20px;
+}
+.button1, .button2{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(244, 174, 11);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+}
+.button1:hover{
+    transition: 0.3s;
+    color: rgb(244, 174, 11);
+    background-color:white ;
+    border: 1px solid rgb(244, 174, 11);
+}
+.button2{
+    background-color: black;
+}
+.button2:hover{
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.button2{
+    margin-left: 5px;
+}
+img{
+    width: 200px;
+} */
+
+
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+.containerx{
+    background-color: grey;
+    
+}
+.divi-container{
+    background-color: white;
+    display: flex;
+    gap: 109px;
+    height: 600px;
+}
+.first-container{
+    width: 55%;
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.main-image{
+    width: 300px;
+    margin-top: 40px;
+    background-color: red;
+}
+.main-image img, .other-images img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.other-images img{
+    border: 2px solid red;
+}
+.other-images{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+    
+}
+.other-images div{
+    width: 90px;
+    height: 100px;
+}
+.secondary-images{
+    width: 1100px;
+}
+
+@media(max-width:1024px){
+    .divi-container{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        height: max-content;
+        justify-content: center;
+        align-items: center;
+    }
+    .other-images{
+        flex-wrap: wrap
+    }
+    .second-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+
+
+
+.price, .rating-icons, .main-text, .two-buttons{
+    padding-top: 20px;
+}
+
+.rating-icons{
+    font-size: 24px;
+}
+.main-text{
+    font-size: 20px;
+}
+.button1, .button2{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(244, 174, 11);
+    color: white;
+    font-weight: bold;
+    border: transparent;
+}
+.button1:hover{
+    transition: 0.3s;
+    color: rgb(244, 174, 11);
+    background-color:white ;
+    border: 1px solid rgb(244, 174, 11);
+}
+.button2{
+    background-color: black;
+}
+.button2:hover{
+    transition: 0.3s;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.button2{
+    margin-left: 5px;
+}
