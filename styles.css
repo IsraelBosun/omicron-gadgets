@@ -321,7 +321,60 @@ a{
   color: black;
 } */
 
-/* Footer CSS */
+
+/* Our Partner Starts */
+.partner-text{
+  /* background-color: red; */
+  height: max-content;
+}
+.part-text, .main-part{
+  text-align: right;
+  padding-bottom: 30px;
+}
+.partner-button{
+  margin-left: 80%;
+}
+.part-text{
+  font-weight: bold;
+}
+.main-part{
+  font-weight: lighter;
+  line-height: 40px;
+}
+.partner-images{
+  /* background-color: aqua; */
+  
+}
+.partner-images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+div .brand-images{
+  max-width: 100%;
+  max-height: 100%;
+}
+.partner-images div{
+  width: 300px;
+}
+.partner-button{
+  border-radius: 30px;
+  height: 40px;
+  border: 2px ;
+  width: 110px;
+  color: white;
+  background-color: red;
+}
+.partner-button:hover{
+  color: red;
+  background-color: transparent;
+  border: 2px solid red;
+
+}
+/* Our Partners Ends */
+
+
+/* Footer CSS starts */
 footer{
   margin-top: 80px;
 }
@@ -383,4 +436,6 @@ i:hover{
 .fa-linkedin:hover{
   color: blue;
 }
+
+/* Footer CSS Ends */
 
