@@ -109,18 +109,15 @@ img{
 body{
     font-family: 'Montserrat', sans-serif; 
 }
-.containerx{
-    background-color: grey;
-    
-}
+
 .divi-container{
-    background-color: white;
+    
     display: flex;
-    gap: 109px;
+    gap: 20px;
     height: 600px;
 }
 .first-container{
-    width: 55%;
+    width: 95%;
     display: flex;
     gap: 100px;
     flex-direction: column;
@@ -141,9 +138,10 @@ body{
 }
 .other-images{
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    padding: 0 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
     
 }
 .other-images div{
@@ -165,13 +163,28 @@ body{
         align-items: center;
     }
     .other-images{
-        flex-wrap: wrap
+        /* flex-wrap: wrap */
+        /* display: grid;
+        grid-template-columns: 100px 100px ;
+        grid-template-rows: 100px 100px;
+        grid-gap: 40px;
+        grid-template-areas: 
+        ; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-width: 300px;
     }
     .second-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .main-text{
+        max-width: 90%;
+        opacity: 0.9;
     }
   
 }
