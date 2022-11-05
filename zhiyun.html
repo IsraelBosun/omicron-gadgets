@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="zhiyun.css">
 
@@ -112,9 +113,10 @@
           <div class=" divi-container">
             <div class="first-container">
               <div class="main-image">
-                <img src="smooth-images/1 (1).jpg" alt="">
+                <img src="smooth-images/1 (1).jpg" alt="" class="major-image" id="major-image">
               </div>
               <div class="other-images">
+                <div><img src="smooth-images/1 (1).jpg" alt="" class="secondary-images"></div>
                 <div><img src="smooth-images/49d308014a67f0bf427b03601614f4dc__1_-removebg-preview.png" alt="" class="secondary-images"></div>
                 <div><img src="smooth-images/51OftyvFOJL._AC_SY450_-removebg-preview.png" alt="" class="secondary-images"></div>
                 <div><img src="smooth-images/H2c000917b91c4d4292829f7247694c49K.jpg" alt="" class="secondary-images"></div>
@@ -123,7 +125,7 @@
               </div>
             </div>
             <div class="second-container mt-5">
-              <h2 class="first-text" id="play" onclick="this.innerHTML = 'Home Boy'">Zhiyun Smooth-x Gimbal</h2>
+              <h3 class="first-text" id="play" onclick="this.innerHTML = 'Home Boy'">Zhiyun Smooth-x Gimbal</h3>
                 <h1 class="price"># 45,000</h1>
                 <div class="rating-icons">
                     <i class="fa-solid fa-star"></i>
@@ -151,7 +153,15 @@
         
    
         <!-- Product Details Ends -->
-
+        <section>
+          <div class="mother-container">
+            <div class="containera" id="containa">Content a</div>
+            <div class="containera" id="containb">Content b</div>
+            <div class="containera" id="containc">Content c</div>
+            <div class="containera" id="containd">Content d</div>
+          </div>
+          <div class="flexible" id="flexible">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae modi dolore dolorum ipsam ut fugiat voluptatem excepturi similique, ipsum quia aspernatur eligendi culpa temporibus nam! Excepturi dolorem sit maiores modi!</div>
+        </section>
       <!-- Footer Begins -->
     <footer>
         <div class="container-fluid ">
@@ -200,6 +210,23 @@
            </div> 
         </div>
     </footer>
+
+   
     <script src="script.js"></script>
+    <script>
+      var containA = document.getElementById("containa")
+      var containB = document.getElementById("containb")
+      var flexible = document.getElementById("flexible")
+
+      var onClick = function(){
+        flexible.textContent = "Loremkklhjgr jtrhjtrhujtrhj rghjgrjrg"
+      }
+      var onClick2 = function(){
+        flexible.innerHTML = "dkagf;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;irioggggggggggggggggggggggggggggggggggghj"
+      }
+      // containA.addEventListener = ("click", onClick)
+      containA.onclick = onClick
+      containB.onclick = onClick2
+    </script>
   </body>
   </html>
