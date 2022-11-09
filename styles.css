@@ -131,11 +131,7 @@ a{
       gap: 5px;
     }
 }
-/* @media(max-width:992px){
-  .collapse{
-    display:;
-  }
-} */
+
 
 .card-title{
   text-align: center;
@@ -148,7 +144,7 @@ a{
  justify-self: center;
  border-radius: 30px;
 }
-.container .row{
+.goat .ape{
   justify-content: space-between;
   column-gap:100px;
   width: max-content;
@@ -332,67 +328,27 @@ a{
 
 /* Our Partner Starts */
 .partner-text{
-  /* background-color: red; */
   height: max-content;
-  width: max-content;
+}
+.row-text{
+  justify-content: space-between;
+}
+.row-images{
+  flex-direction: column;
 }
 .part-text, .main-part{
-  text-align: right;
+  text-align: center;
   padding-bottom: 30px;
 }
 .partner-button{
-  margin-left: 80%;
+  width: 100%;
+  margin: 0 auto;
 }
 .part-text{
   font-weight: bold;
 }
 .main-part{
   font-weight: lighter;
-  
-}
-.partner-images{
-  /* background-color: aqua; */
-  
-}
-.partner-images{
-  display: grid;
-  grid-template-columns: 300px 300px ;
-  grid-template-rows: 70px  70px ;
-  grid-gap: 9px;
-  grid-template-areas:
-    "alpha beta"
-    "delta gamma"
-    "omicron upsilon"
-  }
-.div-img3{
-  grid-area: upsilon;
-}
-
-.div-img4{
-  grid-area: omicron;
-}
-
-@media (max-width: 1080px){
-  .partner-images{
-    /* display: grid; */
-    display: flex;
-    flex-direction: column;
-    margin: none;
-    
-    /* grid-template-columns: 300px 300px ;
-    grid-template-rows: 70px 70px 70px 70px ;
-    grid-gap: 9px; */
-  }
-  .partner-images .div-img{
-    width: 13px;
-  }
-  .part-text, .main-part{
-    text-align: center;
-    padding-bottom: 30px;
-  }
-  .partner-images div{
-    width: 15px;
-  }
 }
 
 div .brand-images{
@@ -400,7 +356,7 @@ div .brand-images{
   max-height: 100%; 
 }
 .partner-images div{
-  width: 150px;
+  width: 250px;
 }
 .partner-button{
   border-radius: 30px;
@@ -422,6 +378,8 @@ div .brand-images{
 /* Footer CSS starts */
 footer{
   margin-top: 80px;
+  margin-left: auto;
+  margin-left: auto;
 }
 .container-fluid{
   border-top: 2px solid blue;
@@ -462,25 +420,13 @@ a{
  background-color: red;
  border-radius: 90px;
 }
-.row > div{
+.ape > div{
   width: 150px;
 }
-i:hover{
-  transition: 0.2s ease-in-out;
-  transform: scale(1.1);
-}
-.fa-facebook:hover{
-  color: blue;
-}
-.fa-instagram:hover{
-  color: rgb(255, 200, 0);
-}
-.fa-twitter:hover{
-  color: blue;
-}
-.fa-linkedin:hover{
-  color: blue;
-}
+
 
 /* Footer CSS Ends */
-
+.mat{
+  background-color: aqua;
+  border: 1px solid red;
+}
