@@ -155,12 +155,13 @@
         <section>
           <div class="container mother-container">
               <div  class="row row-containera">
-            <button class="containera col-xs-12 col-md-12 col-lg-2" id="containa">features & specifications</button>
-            <button class="containera col-xs-12 col-md-12 col-lg-2" id="containb">Description</button>
-            <button class="containera col-xs-12 col-md-12 col-lg-2" id="containc">what is in the box</button>
-            <button class="containera col-xs-12 col-md-12 col-lg-2" id="containd">Before you use</button>
-            </button>
-          </button>
+            <button class="containera col-xs-12 col-md-12 col-lg-3" id="containa">specifications</button>
+            <button class="containera col-xs-12 col-md-12 col-lg-3" id="containb">Description</button>
+            <button class="containera col-xs-12 col-md-12 col-lg-3" id="containc">what is in the box</button>
+            <button class="containera col-xs-12 col-md-12 col-lg-3" id="containd">Before you use</button>
+              </div>
+            </div>
+          
           <div class="flexible container" id="flexible">
            <div class="row col-md-12">
             <table id="table">
@@ -213,10 +214,10 @@
 The rotatable structure in palm size that allows you to toss in a backpack conveniently, an extendable grip made for exploring bigger vision, and a handy App - ZY Cami, for making videos rock everybody! Meet Smooth X and explore your EXTRA life!
             </p>
             <ul class="in-the-box" id="in-the-box">
-              <li>1 Gimbal Stabilizer</li>
-              <li>1 USB Cable</li>
-              <li>1 Manual</li>
-              <li>1 Tripod Stand</li>
+              <li class="rat">1 Gimbal Stabilizer</li>
+              <li class="rat">1 USB Cable</li>
+              <li class="rat">1 Manual</li>
+              <li class="rat">1 Tripod Stand</li>
             </ul>
             <div class="second-paragraph" id="second-paragraph" >
             <p class="" >
@@ -235,7 +236,7 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
     <footer>
         <div class="container-fluid ">
           <div class="row footer-row">
-            <div class="col-md-2 first">Company<div class="line"></div>
+            <div class="col-md-2 col-sm-4 first">Company<div class="line"></div>
                 <div class="listings">
                     <ul class="lists">
                         <a href=""><li>About us</li></a>
@@ -246,7 +247,7 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">Get Help <div class="line"></div>
+            <div class="col-md-2 col-sm-4">Get Help <div class="line"></div>
                 <div class="listings2">
                     <ul class="lists2">
                         <a href=""> <li>FAQ</li></a>
@@ -257,7 +258,7 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">Online Shop <div class="line"></div>
+            <div class="col-md-2 col-sm-4">Online Shop <div class="line"></div>
                 <div class="listings3">
                     <ul class="lists3">
                         <a href=""><li>Zhiyun</li></a>
@@ -268,7 +269,7 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
                     </ul>
                 </div>
             </div>
-            <div class="col-lg">Follow us <div class="line"></div>
+            <div class="col-md-2 col-sm-4">Follow us <div class="line"></div>
                 <div class="icon">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -281,10 +282,14 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
     </footer>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mat">Container</div>
-        <div class="col-lg-6 mat">Container</div>
-        <div class="col-lg-6 mat">Container</div>
-        <div class="col-lg-6 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
+        <div class="col-lg-1 mat">Container</div>
         </div>
     </div>
    
@@ -305,6 +310,10 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
       // containB.onclick = onClick2
 
       var features = document.getElementById("containa");
+      var description = document.getElementById("containb")
+      var whatsInTheBox = document.getElementById("containc")
+      var beforeYouUse = document.getElementById("containd")
+      
 
       var table = document.getElementById("table")
       var firstParagraph = document.getElementById("first-paragraph")
@@ -312,17 +321,45 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
       var secondParagraph = document.getElementById("second-paragraph")
 
       var firstClick = function() {
-        // firstParagraph.classList.toggle("active")
-        // inTheBox.classList.toggle("active")
-        // secondParagraph.classList.toggle("active")
-
-        firstParagraph.className += active
-        inTheBox.className += active
-        secondParagraph.className += active
-
+           table.className = "block";
+           firstParagraph.className = "active";
+           inTheBox.className = "active";
+           secondParagraph.className = "active";
       }
-      var secondClick = 
-      features.addEventListener("click", firstClick)
+      
+      window.addEventListener("DOMContentLoaded", firstClick);
+      features.addEventListener("click", firstClick);
+
+      var secondClick = function(){
+        firstParagraph.className = "passive";
+        table.className = "active";
+        inTheBox.className = "active";
+        secondParagraph.className = "active";
+      }
+
+      description.addEventListener("click", secondClick);
+
+      var thirdClick = function(){
+        inTheBox.className = "passive";
+        firstParagraph.className = "active";
+        table.className = "active";
+        secondParagraph.className = "active";
+      }
+      
+      whatsInTheBox.addEventListener("click", thirdClick);
+
+      var forthClick = function(){
+        secondParagraph.className = "passive";
+        inTheBox.className = "active";
+        firstParagraph.className = "active";
+        table.className = "active";
+      }
+
+      beforeYouUse.addEventListener("click", forthClick)
+
+
+
+
 
     </script>
   </body>

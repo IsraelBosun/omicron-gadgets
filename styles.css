@@ -150,11 +150,11 @@ a{
   width: max-content;
 }
 @media (max-width:400px) {
-  .container .row{
+  /* .container .row{
     justify-content: space-between;
     column-gap:0px;
     width: 350px;
-  }
+  } */
   
 }
 
@@ -285,84 +285,40 @@ a{
   box-shadow: 12px 12px 25px 0 rgb(41, 40, 40)inset , -11px -11px 25px 0 rgb(232, 186, 186) inset;
 }
 
-/* TESTING STOPS */
-
-/* Footer */
-/* .footer{
-  font-family: 'Fuzzy Bubbles', cursive;
-  background-color: rgb(243, 43, 43);
-  color: white;
-  height: 100%;
-}
-.home{
-  width: 500px;
-  color: white;
-  
-}
-.sign-up{
-  cursor: pointer;
-  border: 2px solid red;
-  color: red;
-  background-color: white;
-}
-.sign-up:hover{
-  transition-duration: 0.3s;
-  transform: scale(1.1);
-  color: red;
-}
-.fa-facebook, .fa-instagram, .fa-twitter{
-  color: rgb(255, 255, 255);
-  font-size: 17px;
-  cursor: pointer;
-}
-.facebook, .instagram, .twitter{
-  display: inline;
-}
-.fa-facebook:hover, .fa-instagram:hover, .fa-twitter:hover{
-  color: blue;
-}
-.home > h1 {
-  color: black;
-} */
-
-
 /* Our Partner Starts */
 .partner-text{
+  padding-top: 40px;
   height: max-content;
 }
 .row-text{
   justify-content: space-between;
 }
-.row-images{
-  flex-direction: column;
-}
-.part-text, .main-part{
-  text-align: center;
-  padding-bottom: 30px;
-}
-.partner-button{
-  width: 100%;
-  margin: 0 auto;
+.main-part{
+  padding-top: 20px;
+  text-align: justify;
 }
 .part-text{
+  text-align: center;
   font-weight: bold;
 }
 .main-part{
   font-weight: lighter;
 }
-
 div .brand-images{
+  display: inline;
   max-width: 100%;
   max-height: 100%; 
 }
-.partner-images div{
-  width: 250px;
-}
+/* .partner-images .able{
+ border: 2px solid red;
+} */
 .partner-button{
+  margin-top: 5px;
+  margin-left: 40%;
   border-radius: 30px;
   height: 40px;
   border: 2px ;
-  width: 110px;
+  width: 120px;
   color: white;
   background-color: red;
 }
@@ -381,6 +337,11 @@ footer{
   margin-left: auto;
   margin-left: auto;
 }
+.footer-row{
+  
+  justify-content: space-between;
+  align-items: baseline;
+}
 .container-fluid{
   border-top: 2px solid blue;
   height: max-content;
@@ -393,7 +354,7 @@ footer{
   column-gap: 50px;
   row-gap: 30px;
 }
-ul{
+.lists, .lists2, .lists3{
   list-style: none;
 }
 a{
