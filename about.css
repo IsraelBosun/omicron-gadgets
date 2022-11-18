@@ -1,0 +1,34 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.about-head{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(238,157,171,255);
+}
+.about-head > h1{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 90px;
+}
+.about-image{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: -60px;
+    max-width: 100%;
+    padding: 0 30px;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+}
+.about-images p{
+    font-weight: lighter;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* nav{
+    position: sticky; top: 0;
+} */

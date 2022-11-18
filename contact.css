@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F0F0F3;
+    
+}
+html{
+    background-color: red;
+}
+.contact-section{
+    margin-top: 50px;
+    height: 1000px;
+}
+.contact-div{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.contact{
+   
+}
+.line{
+    background-color: red;
+    height: 1px;
+}
+.love{
+    margin-top: 30px;
+    font-size: 25px;
+}
+.hassle{
+    font-size: 20px;
+}
+.submit{
+    width: 100px;
+}
+.form-contact{
+    justify-content: space-around;
+    max-width: 100%;
+    gap: 50px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 13px;
+}
+.message{
+    height: 100px;
+}
+.tel, .mail, .phone-msg{
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 17px;
+    height: fit-content;
+    color: black;
+    display: inline;
+}
+.email, .phone-line{
+   padding-top: 30px;
+}
+.line2{
+    
+    background-color: red;
+    height: 1px;
+    
+}
+.iconic{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    bottom: 50px;
+    font-size: 30px;
+}
+.follow-us{
+    margin-bottom: -70px;
+}
+.inputer{
+    border-radius: 5px;
+    background-color: #F0F0F3;
+    border: none;
+    box-shadow: 10px 10px 20px #a3a5a6, inset -15px -8px 20px #ffffff;
+}
+.inputer:click{
+    border: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #a3a5a6, -10px -10px 20px #ffffff;
+}
