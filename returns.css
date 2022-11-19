@@ -1,0 +1,21 @@
+.returns-main{
+    background-color: rgb(187, 184, 184);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 0 90px;
+}
+.need{
+    height: fit-content;
+    padding-top: 100px;
+}
+.returns-text{
+    padding: 0 40px;
+    
+}
+.thirty-days{
+    text-align: center;
+}
+.returns-main-text{
+    text-align: justify;
+}
