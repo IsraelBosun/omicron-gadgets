@@ -29,6 +29,10 @@ body{
     text-align: justify;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.about-main-text{
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+}
 /* nav{
     position: sticky; top: 0;
 } */

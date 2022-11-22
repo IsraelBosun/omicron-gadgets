@@ -256,21 +256,12 @@ a{
   justify-content: space-between;
   column-gap:100px;
   width: max-content;
-}
-@media (max-width:400px) {
-  .container .row{
-    justify-content: space-between;
-    column-gap:0px;
-    width: 350px;
-  }
-  
+   max-width: 100%;
+    gap: 30px;
 }
 
 .headerrow{
   width: 20px;
-}
-.ape{
-  max-width: 100%;
 }
 .zhiyun{
   position: relative;
@@ -328,13 +319,13 @@ a{
   box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
 }
 .card:hover{
-  /* transform: scale(1.1);
-  box-shadow: -2px -2px 8px  6px rgb(240, 130, 130); */
+  transform: scale(1.1);
+  box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
 }
 .buttonred:hover{
   transition-duration: 0.2s;
   transform: scale(1.05) ;
-  box-shadow: 1px 5px 6px  1px rgb(240, 130, 130);
+  /* box-shadow: 100px 50px 60px rgb(240, 130, 130) -10px -5px 60px rgb(255, 255, 255) ; */
 }
 .carda{
   width: 200px;
@@ -398,11 +389,14 @@ a{
 
 /* Our Partner Starts */
 .partner-text{
-  padding-top: 40px;
   height: max-content;
+}
+.partner-partner{
+  margin-top: 80px;
 }
 .row-text{
   justify-content: space-between;
+  margin: 0 10px;
 }
 .main-part{
   padding-top: 20px;
@@ -437,8 +431,21 @@ div .brand-images{
   color: red;
   background-color: transparent;
   border: 2px solid red;
-
 }
+.row-images{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.able{
+  width: 150px;
+}
+.brand-images{
+  width: 100%;
+}
+
 /* Our Partners Ends */
 
 

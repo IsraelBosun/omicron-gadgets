@@ -208,7 +208,9 @@ body{
         
     }
 }
-
+.boot-image{
+    width: 400px;
+}
 
 
 .price, .rating-icons, .main-text, .two-buttons{
