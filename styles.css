@@ -401,10 +401,12 @@ a{
 .main-part{
   padding-top: 20px;
   text-align: justify;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
 .part-text{
   text-align: center;
   font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
 }
 .main-part{
   font-weight: lighter;
@@ -419,13 +421,18 @@ div .brand-images{
 } */
 .partner-button{
   margin-top: 5px;
-  margin-left: 40%;
+  /* margin-left: 30%; */
   border-radius: 30px;
   height: 40px;
   border: 2px ;
   width: 120px;
   color: white;
   background-color: red;
+}
+.red-button{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px ;
 }
 .partner-button:hover{
   color: red;
@@ -461,10 +468,13 @@ footer{
   align-items: baseline;
 }
 .footer-fluid{
-  border-top: 2px solid blue;
   height: max-content;
   justify-content: space-between;
+  background-color: black;
   
+}
+.footer-row div{
+  color: red;
 }
 .footer-fluid .row{
   margin: 0 2%;
@@ -492,6 +502,7 @@ a{
 }
 .icon{
   padding-top: 10px;
+  color: white !important;
 }
 .line{
  height: 2px;
@@ -508,12 +519,14 @@ a{
 }
 .paydiv{
   width: 200px;
-  
 }
 .payImg{
   width: 100%;
   margin: 0;
   border: 2px solid red;
+}
+.footer-row div div ul li{
+  color: white;
 }
 
 /* Footer CSS Ends */

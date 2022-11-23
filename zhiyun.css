@@ -261,7 +261,8 @@ section{
     margin-top: 30px;
 }
 .row-containera{
-    justify-content: space-between;  
+    justify-content: space-between;
+    row-gap: 5px;  
 }
 .containera{
     background-color: white;
@@ -281,11 +282,16 @@ section{
     height: max-content;
     margin: 5px auto;
     border: 1px solid rgb(189, 186, 186);
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 tr, td{
     width: 5px;
-    padding: 8px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .rat{
     padding: 5px;
     margin-left: 50px;
@@ -294,9 +300,15 @@ tr, td{
     display: none;
 }
 .passive{
-    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .mat{
     background-color: aqua;
     border: 1px solid red;
+}
+.font, .rat, #first-paragraph, tr{
+   
+}
+#first-paragraph{
+    line-height: 40px;
 }

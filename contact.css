@@ -7,9 +7,6 @@ body{
     background-color: #F0F0F3;
     
 }
-html{
-    background-color: red;
-}
 .contact-section{
     margin-top: 50px;
     height: 1000px;
@@ -73,9 +70,7 @@ form{
 .iconic{
     display: flex;
     gap: 20px;
-    position: relative;
-    bottom: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 .follow-us{
     margin-bottom: -70px;
@@ -84,7 +79,7 @@ form{
     border-radius: 5px;
     background-color: #F0F0F3;
     border: none;
-    box-shadow: 10px 10px 20px #a3a5a6, inset -15px -8px 20px #ffffff;
+    box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
 }
 .inputer:click{
     border: none;
@@ -95,5 +90,8 @@ form{
     align-content: center;
     height: 280px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px #a3a5a6, -10px -10px 20px #ffffff;
+    box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
+}
+.font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
