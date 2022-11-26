@@ -229,22 +229,25 @@ img{
     position: relative;
 }
 .prev, .next{
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
-    
+    color: red;
     top: 50%;
+    
 }
-.next{
-    left: 97%;
+.next1{
+    left: 9%;
 }
 .prev{
-    right: 97%;
+    right: 95%;
 }
 .next:hover, .prev:hover{
-    background-color: grey;
+    color: black;
+    background-color: red;
     cursor: pointer;
     border-radius: 0 3px 3px 0;
     text-decoration: underline;
+    
     
 }
 
@@ -289,7 +292,20 @@ img{
 .button2{
     margin-left: 5px;
 }
-
+.num{
+    display: inline;
+}
+.signs{
+    display: flex;
+    gap: 50px;
+}
+.signature{
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10%;
+    cursor: pointer;
+}
 
 
 

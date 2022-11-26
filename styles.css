@@ -139,13 +139,34 @@ a{
   background-color: #F0F0F3;
   height: max-content;
   max-width: 100%;
+  padding: 10px;
 }
  .first-div .head{
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
-} 
+}
+/**
+* ? Adding Cart
+**/
+.cart{
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  position: relative;
+  padding: 2px;
+  border-radius: 10%;
+}
+.cartAmount{
+  background-color: red;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-size: 10px;
+  padding: 3px;
+  border-radius: 10%;
+}
 #nav-menu{
   display: flex;
   justify-content: space-between;
@@ -172,7 +193,7 @@ a{
   height: 3px;
   background-color: red;
   margin: 5px auto;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
 }
 #nav-menux{
   opacity: 100%;
