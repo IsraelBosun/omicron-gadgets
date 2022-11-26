@@ -106,7 +106,7 @@ img{
 
 
 
-body{
+/* body{
     font-family: 'Montserrat', sans-serif;
     background-color: #F0F0F3;
 }
@@ -137,8 +137,6 @@ body{
     width: 300px;
     margin-top: 40px;
     border: 2px solid red;
-    
-    /* background-color: red; */
 }
 .main-image img, .other-images img{
     max-width: 100%;
@@ -175,13 +173,7 @@ body{
        
     }
     .other-images{
-        /* flex-wrap: wrap */
-        /* display: grid;
-        grid-template-columns: 100px 100px ;
-        grid-template-rows: 100px 100px;
-        grid-gap: 40px;
-        grid-template-areas: 
-        ; */
+     
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -210,7 +202,52 @@ body{
 }
 .boot-image{
     width: 400px;
+} */
+
+.other-images > div{
+  width: max-content;
+  border: 2px solid red;
 }
+.other-images div .secondary-images{
+    width: 50px;
+}
+.other-images{
+    display: flex;
+    flex-wrap: wrap;justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    padding: 0 10px;
+}
+.major-image{
+    width: 100%;
+    border: 2px dotted green;
+}
+.divi-container{
+    justify-content: space-between;
+}
+.main-image{
+    position: relative;
+}
+.prev, .next{
+    font-size: 30px;
+    position: absolute;
+    
+    top: 50%;
+}
+.next{
+    left: 97%;
+}
+.prev{
+    right: 97%;
+}
+.next:hover, .prev:hover{
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    text-decoration: underline;
+    
+}
+
 
 
 .price, .rating-icons, .main-text, .two-buttons{

@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    
+    <script src="https://kit.fontawesome.com/69264f9c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="test.css">
+
+    <title>Omicron Gadgets</title>
+  </head>
+  <body>
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="row play">
+        <div class="col-lg-6">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="smooth-images/smx-banner-detail-img1en-removebg-preview.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="smooth-images/1 (1).jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="smooth-images/49d308014a67f0bf427b03601614f4dc__1_-removebg-preview.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="smooth-images/51OftyvFOJL._AC_SY450_-removebg-preview.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="smooth-images/H270ccbb77dba485d8de2c2f57483c17aK.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="smooth-images/H3b219f5e36214d9386dd457236f155ddU.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="col-lg-6">
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/smx-banner-detail-img1en-removebg-preview.png"  style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/1 (1).jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/49d308014a67f0bf427b03601614f4dc__1_-removebg-preview.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/51OftyvFOJL._AC_SY450_-removebg-preview.png"  style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/H270ccbb77dba485d8de2c2f57483c17aK.png"  style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="smooth-images/H3b219f5e36214d9386dd457236f155ddU.jpg" style="width:100%" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+      </div>
+    </div>
+    </div>
+  </div>
+
+<section id="section">
+  <div id="div1">Twinkle Twinkle litte star</div>
+  <div id="div2">How i wonder what you are</div>
+  <div id="div3">Up above the world so high</div>
+</section>
+
+  <script>
+    var tag = document.getElementById("section")
+    var firstDiv = document.getElementById("div1");
+    var secondDiv = document.getElementById("div2");
+    var thirdDiv = document.getElementById("div3");
+
+    var create = document.createElement("div")
+    create.innerHTML ="Like a diamond in the sky"
+    // document.body.appendChild(create);
+    // tag.appendChild(create);
+    tag.insertBefore(create, secondDiv);
+
+    var create2 = document.createElement("div");
+    create2.innerHTML = "Replacing you this div"
+    tag.replaceChild(create2, secondDiv);
+
+
+    var cat = function() {
+      tag.removeChild(thirdDiv)
+    }
+    tag.addEventListener("click", cat)
+
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+  </script>
+  </body>
+</html>
