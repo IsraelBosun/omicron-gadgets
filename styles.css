@@ -43,11 +43,11 @@ body{
 .collapse{
   display: none;
 }
-.cardss{
+/* .cardss{
   display: flex;
   align-content: center;
   
-}
+} */
 .icons{
   display: flex;
   align-content: flex-end;
@@ -151,21 +151,24 @@ a{
 * ? Adding Cart
 **/
 .cart{
-  font-size: 20px;
-  background-color: black;
-  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: #F0F0F3;
+  color: red;
   position: relative;
-  padding: 2px;
+  padding: 0 7px;
   border-radius: 10%;
+  box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
 }
 .cartAmount{
   background-color: red;
   position: absolute;
+  color: black;
   top: -15px;
   right: -10px;
-  font-size: 10px;
-  padding: 3px;
-  border-radius: 10%;
+  font-size: 19px;
+  padding: 0 3px;
+  border-radius: 20%;
 }
 #nav-menu{
   display: flex;
@@ -275,7 +278,7 @@ a{
 }
 .goat .ape{
   justify-content: space-between;
-  column-gap:100px;
+  column-gap: 50px;
   width: max-content;
    max-width: 100%;
     gap: 30px;
@@ -306,7 +309,6 @@ a{
   justify-content: center;
   
 }
-
 .cardbody{
   display: flex;
   justify-content: space-around;
@@ -410,10 +412,15 @@ a{
 
 /* Our Partner Starts */
 .partner-text{
-  height: max-content;
+  height: fit-content;
+  
 }
 .partner-partner{
   margin-top: 80px;
+  height: fit-content;
+}
+.pen{
+  background: linear-gradient(to top, #f08a71, #fff);
 }
 .row-text{
   justify-content: space-between;
@@ -491,7 +498,7 @@ footer{
 .footer-fluid{
   height: max-content;
   justify-content: space-between;
-  background-color: black;
+  background-color: rgb(56, 55, 55);
   
 }
 .footer-row div{

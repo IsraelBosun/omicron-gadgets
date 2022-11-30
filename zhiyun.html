@@ -140,9 +140,9 @@
                      -->
                     </button>
                     <div class="signs">
-                      <i class="signature bi bi-dash-lg"></i>
+                      <i id="decrease" class="signature bi bi-dash-lg"></i>
                       <div class="num">0</div>
-                      <i class="signature bi bi-plus-lg"></i>
+                      <i id="increase" class="signature bi bi-plus-lg"></i>
                     </div>
                     <button class="button2 mt-4">
                         <i class="fa-solid fa-wallet"></i>     BUY NOW
@@ -285,72 +285,10 @@ The rotatable structure in palm size that allows you to toss in a backpack conve
   </div>
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-   <script src="script.js"></script> 
+    <script src="zhiyun.js"></script>
    <script src="main.js"></script>
     
     <script>
-      var containA = document.getElementById("containa")
-      var containB = document.getElementById("containb")
-      var flexible = document.getElementById("flexible")
-
-      // var onClick = function(){
-      //   flexible.textContent = "Loremkklhjgr jtrhjtrhujtrhj rghjgrjrg"
-      // }
-      // var onClick2 = function(){
-      //   flexible.innerHTML = "dkagf;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;irioggggggggggggggggggggggggggggggggggghj"
-      // }
-      // // containA.addEventListener = ("click", onClick)
-      // containA.onclick = onClick
-      // containB.onclick = onClick2
-
-      var features = document.getElementById("containa");
-      var description = document.getElementById("containb")
-      var whatsInTheBox = document.getElementById("containc")
-      var beforeYouUse = document.getElementById("containd")
-      
-
-      var table = document.getElementById("table")
-      var firstParagraph = document.getElementById("first-paragraph")
-      var inTheBox = document.getElementById("in-the-box");
-      var secondParagraph = document.getElementById("second-paragraph")
-
-      var firstClick = function() {
-           table.className = "block";
-           firstParagraph.className = "active";
-           inTheBox.className = "active";
-           secondParagraph.className = "active";
-      }
-      
-      window.addEventListener("DOMContentLoaded", firstClick);
-      features.addEventListener("click", firstClick);
-
-      var secondClick = function(){
-        firstParagraph.className = "passive";
-        table.className = "active";
-        inTheBox.className = "active";
-        secondParagraph.className = "active";
-      }
-
-      description.addEventListener("click", secondClick);
-
-      var thirdClick = function(){
-        inTheBox.className = "passive";
-        firstParagraph.className = "active";
-        table.className = "active";
-        secondParagraph.className = "active";
-      }
-      
-      whatsInTheBox.addEventListener("click", thirdClick);
-
-      var forthClick = function(){
-        secondParagraph.className = "passive";
-        inTheBox.className = "active";
-        firstParagraph.className = "active";
-        table.className = "active";
-      }
-
-      beforeYouUse.addEventListener("click", forthClick)
-
 
 
 
