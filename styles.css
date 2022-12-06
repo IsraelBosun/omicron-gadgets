@@ -188,18 +188,9 @@ body{
   color: red;
   background-color: rgb(33, 30, 30);
 }
-.bi-dash-lg:hover{
-  color: rgb(33, 30, 30);
-  background-color: red;
-}
-
 .bi-plus-lg{
   color: black;
   background-color: red;
-}
-.bi-plus-lg:hover{
-  color: red;
-  background-color: black;
 }
 .signature{
   border-radius: 20%;
