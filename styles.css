@@ -14,6 +14,15 @@ body{
 
 
 /* Header start  */
+ .sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+ }
+ .sticky + .content {
+  padding-top: 102px;
+ }
+
  .first-div{
   background-color: #F0F0F3;
   height: max-content;
@@ -145,18 +154,20 @@ body{
   width: 200px;
   margin: 0;
   padding: none;
+  text-align: center;
 }
 .details{
   text-align: center;
   font-weight: bolder;
 }
 .image-div{
-  width: 150px;
+  width: px;
   height: 150px;
+  /* margin: 0 auto; */
 }
 .imagery{
-  max-width: 100%;
-  max-height: 100%;
+  max-width: px;
+  max-height: 150px;
 }
 .zhi{
   margin-bottom: 0%;
@@ -174,12 +185,28 @@ body{
   gap: 6px;
 }
 .bi-dash-lg{
-  color: blue;
-}
-.bi-plus-lg{
   color: red;
+  background-color: rgb(33, 30, 30);
+}
+.bi-dash-lg:hover{
+  color: rgb(33, 30, 30);
+  background-color: red;
 }
 
+.bi-plus-lg{
+  color: black;
+  background-color: red;
+}
+.bi-plus-lg:hover{
+  color: red;
+  background-color: black;
+}
+.signature{
+  border-radius: 20%;
+  margin-bottom: 16px;
+  cursor: pointer;
+  
+}
 .btn2{
  display: flex;
  max-width: fit-content;
