@@ -151,7 +151,8 @@ body{
   box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
   height: max-content;
   gap: 10px;
-  width: 200px;
+  width: 170px;
+  height: fit-content;
   margin: 0;
   padding: none;
   text-align: center;
@@ -170,10 +171,15 @@ body{
   max-height: 150px;
 }
 .zhi{
+  font-size: 14px;
   margin-bottom: 0%;
 }
 .explore{
-  font-size: 14px;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+.amount{
+  font-size: 19px;
 }
 .price-quantity{
   display: flex;
@@ -311,6 +317,7 @@ body{
   height: fit-content;
 }
 .pen{
+  height: max-content;
   background: linear-gradient(to top, #f08a71, #fff);
 }
 .row-text{
@@ -339,7 +346,7 @@ div .brand-images{
  border: 2px solid red;
 } */
 .partner-button{
-  margin-top: 5px;
+  margin-top: -36px;
   /* margin-left: 30%; */
   border-radius: 30px;
   height: 40px;
@@ -359,6 +366,7 @@ div .brand-images{
   border: 2px solid red;
 }
 .row-images{
+  
   display: flex;
   flex-direction: column;
   justify-content: center;

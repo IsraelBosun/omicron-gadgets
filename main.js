@@ -38,21 +38,21 @@ let shopItemsData = [{
     id: "first",
     name: "ZHIYUN SMOOTH-X",
     price: 45000,
-    desc: "Experience the extra life",
+    desc: "Experience the Xtra life",
     img: "index-images/smx-banner-detail-img1en.png"
 },
 {
     id: "second",
     name: "DJI OSMO",
     price: 50000,
-    desc: "Experience the extra life",
+    desc: "Experience the Xtra life",
     img: "index-images/o2.png"
 },
 {
     id: "third",
     name: "ZHIYUN WEEBILL-S",
     price: 60000,
-    desc: "Experience the extra life",
+    desc: "Experience the Xtra life",
     img: "index-images/03.png"
 },
 {
@@ -81,7 +81,7 @@ let generateShop = ()=>{
             <img class="imagery" src="${img}" alt="">
             </div>
             <div class="mt-2 price-quantity">
-              <h4># ${price}</h4>
+              <h5 class ="amount">#${price}</h5>
               <div class="buttons">
                 <i onclick="decrement(${id})" class="signature bi bi-dash-lg"></i>
                 <div id = ${id} class="quantity">
@@ -141,3 +141,8 @@ let calculation =() => {
 };
 
 calculation();
+// var details = prompt("do you like this webpage?")
+
+// window.onload = function(){
+//   alert("Hello, kindky tell us how we can make this page better")
+// }
