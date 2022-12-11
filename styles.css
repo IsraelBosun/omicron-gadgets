@@ -195,6 +195,7 @@ body{
   display: flex;
   justify-content: ;  
   gap: 6px;
+  font-size:;
 }
 .bi-dash-lg{
   color: red;
@@ -490,7 +491,7 @@ a{
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  width: 370px;
+  width: 250px;
   margin: 0 auto;
 }
 .cart-item{
@@ -498,12 +499,13 @@ a{
   border-radius: 5px;
   display: flex;
   gap: 30px;
+  height: 60px;
 }
 .title-price-x{
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  align-items: center;
+  gap: 20px;
+  /* align-items: center; */
   width: 10px;
 }
 .title-price{
@@ -513,12 +515,16 @@ a{
   gap: 20px;
 }
 .product-name{
-  font-size: 16px;
+  font-size: 9px;
 }
 .cart-item-price{
   background-color: #212529;
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
-  font-size: 16px;
+  font-size: 9px;
+}
+.button-up{
+  margin-top: -20px;
+  font-size: 13px;
 }
