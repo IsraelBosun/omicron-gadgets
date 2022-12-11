@@ -24,14 +24,18 @@ let calculation =() => {
            <div class = "details">
                 <div class = "title-price-x">
                     <h4 class = "title-price">
-                        <p>${search.name} </p>
-                        <p>${search.price} </p>
+                        <p class = "product-name">${search.name} </p>
+                        <p class = "cart-item-price">${search.price} </p>
                         
                     </h4>
                     <i class = "bi bi-x-lg"></i>
                 </div>
 
-                <div class = "cart-buttons"></div>
+             <div class="buttons">
+                    <i onclick="decrement(${id})" class="signature bi bi-dash-lg"></i>
+                    <div id = ${id} class="quantity">${item}</div>
+                    <i onclick="increment(${id})" class="signature bi bi-plus-lg"></i>
+              </div>
 
                 <h3></h3>
            </div>
@@ -51,3 +55,47 @@ let calculation =() => {
     }
   };
   generateCartItems();
+
+  let increment = (id)=>{
+    let selectedItem = id;
+    let search = basket.find((x)=> x.id === selectedItem.id);
+  
+    if(search === undefined){
+       basket.push({
+      id: selectedItem.id,
+      item: 1,
+    });
+    } else{
+      search.item +=1;
+    }
+   
+    
+    // console.log(basket);
+    update(selectedItem.id);
+  
+    localStorage.setItem("data", JSON.stringify(basket));
+  }
+  let decrement = (id)=>{
+    let selectedItem = id;
+    let search = basket.find((x)=> x.id === selectedItem.id);
+  
+    if (search === undefined) return
+    else if(search.item === 0) return;
+     else{
+      search.item -=1;
+    }
+   
+    update(selectedItem.id);
+    basket = basket.filter((r)=> r.item !==0 );
+    generateCartItems();
+    
+  
+    localStorage.setItem("data", JSON.stringify(basket));
+  };
+
+  let update = (id)=>{
+    let search =basket.find((x) => x.id === id);
+    // console.log(search.item);
+    document.getElementById(id).innerHTML = search.item;
+    calculation()
+  };
