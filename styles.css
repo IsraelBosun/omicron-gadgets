@@ -22,7 +22,11 @@ body{
  .sticky + .content {
   padding-top: 102px;
  }
-
+ .omicron{
+  text-decoration: none;
+  color: ;
+  font-size: 90px;
+ }
  .first-div{
   background-color: #F0F0F3;
   height: max-content;
@@ -47,6 +51,7 @@ body{
   padding: 0 7px;
   border-radius: 10%;
   box-shadow: 3px 3px 7px 0  #AEAEC0, -7px -7px 16px  #FFFFFF, -1px -1px 7px 0 rgb(93, 92, 92) inset, 5px 2px 7px 0 white inset ;
+  cursor: pointer;
 }
 .cartAmount{
   background-color: red;
@@ -144,6 +149,7 @@ body{
   justify-content: space-around;
   align-content: center;
   gap: 15px;
+  padding: 0 10px;
   /* margin: 0 50%; */
 }
 .item{
@@ -319,6 +325,7 @@ body{
 .pen{
   height: max-content;
   background: linear-gradient(to top, #f08a71, #fff);
+  
 }
 .row-text{
   justify-content: space-between;
@@ -460,4 +467,43 @@ a{
 .mat{
   background-color: aqua;
   border: 1px solid red;
+}
+
+.text-center{
+  color: red;
+}
+.HomeBtn{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.bi-x-lg{
+  color: red;
+  font-weight: bold;;
+}
+.shopping-cart{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+}
+.cart-item{
+  border: 2px solid red;
+  border-radius: 5px;
+  display: flex;
+}
+.title-price-x{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 370px;
+}
+.title-price{
+  display: flex;
+  align-items: center;
 }

@@ -34,37 +34,10 @@ function myFunction (){
 
 
 let shop = document.getElementById("shop")
-let shopItemsData = [{
-    id: "first",
-    name: "ZHIYUN SMOOTH-X",
-    price: 45000,
-    desc: "Experience the Xtra life",
-    img: "index-images/smx-banner-detail-img1en.png"
-},
-{
-    id: "second",
-    name: "DJI OSMO",
-    price: 50000,
-    desc: "Experience the Xtra life",
-    img: "index-images/o2.png"
-},
-{
-    id: "third",
-    name: "ZHIYUN WEEBILL-S",
-    price: 60000,
-    desc: "Experience the Xtra life",
-    img: "index-images/03.png"
-},
-{
-    id: "forth",
-    name: "DJI RONIN-SC",
-    price: 70000,
-    desc: "Explore Your Xtra Life",
-    img: "index-images/04.png"
-}];
 
 
-let basket =JSON.parse(localStorage.getItem("data")) || []
+
+let basket =JSON.parse(localStorage.getItem("data")) || [];
 
 
 let generateShop = ()=>{
@@ -110,23 +83,29 @@ let increment = (id)=>{
     search.item +=1;
   }
  
-  localStorage.setItem("data", JSON.stringify(basket));
+  
   // console.log(basket);
   update(selectedItem.id);
+
+  localStorage.setItem("data", JSON.stringify(basket));
 }
 let decrement = (id)=>{
   let selectedItem = id;
   let search = basket.find((x)=> x.id === selectedItem.id);
 
-  if(search.item === 0) return;
+  if (search === undefined) return
+  else if(search.item === 0) return;
    else{
     search.item -=1;
   }
  
-  localStorage.setItem("data", JSON.stringify(basket));
-  // console.log(basket);
   update(selectedItem.id);
-}
+  basket = basket.filter((r)=> r.item !==0 );
+  // console.log(basket);
+  
+
+  localStorage.setItem("data", JSON.stringify(basket));
+};
 let update = (id)=>{
   let search =basket.find((x) => x.id === id);
   // console.log(search.item);
@@ -141,8 +120,40 @@ let calculation =() => {
 };
 
 calculation();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var details = prompt("do you like this webpage?")
 
-// window.onload = function(){
-//   alert("Hello, kindky tell us how we can make this page better")
-// }
+window.onload = function(){
+  alert("Hello there, this website is still under construction. kindky tell us how we can make this website better")
+}
