@@ -155,5 +155,5 @@ calculation();
 // var details = prompt("do you like this webpage?")
 
 window.onload = function(){
-  alert("Hello there, this website is still under construction. kindly tell us how we can make it better")
+  alert("Hello there, this website is still under construction. kindly tell us how we can make it better.")
 }

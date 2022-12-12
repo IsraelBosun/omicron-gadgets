@@ -473,7 +473,7 @@ a{
 .text-center{
   color: red;
 }
-.HomeBtn{
+.HomeBtn, .checkout, .removeall{
   background-color: red;
   color: white;
   border: none;
@@ -491,15 +491,15 @@ a{
   justify-content: center;
   flex-direction: column;
   gap: 30px;
-  width: 250px;
-  margin: 0 auto;
+  width: 270px;
+  margin: 50px auto;
 }
 .cart-item{
   border: 2px solid red;
   border-radius: 5px;
   display: flex;
   gap: 30px;
-  height: 60px;
+  height: 90px;
 }
 .title-price-x{
   display: flex;
@@ -507,6 +507,7 @@ a{
   gap: 20px;
   /* align-items: center; */
   width: 10px;
+  cursor: pointer;
 }
 .title-price{
   display: flex;
@@ -527,4 +528,12 @@ a{
 .button-up{
   margin-top: -20px;
   font-size: 13px;
+}
+.total{
+  font-size: 13px;
+  margin-top: px;
+
+}
+.checkout{
+  background-color: green;
 }
