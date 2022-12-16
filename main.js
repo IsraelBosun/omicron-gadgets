@@ -157,6 +157,6 @@ calculation();
 window.onload = function(){
   alert("Hello there, this website is still under construction. kindly tell us how we can make it better.")
 };
-window.addEventListener("resize", function(){
-  this.alert(`The width of your screen is ${window.innerWidth}px and the height is ${window.innerHeight}px`)
-})
+// window.addEventListener("resize", function(){
+//   this.alert(`The width of your screen is ${window.innerWidth}px and the height is ${window.innerHeight}px`)
+// })

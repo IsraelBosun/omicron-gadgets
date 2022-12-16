@@ -114,17 +114,52 @@ otherImages[5].onmousemove = testing
 // var update = () => {};
 // var solid = document.getElementById("solid")
 
-var increa = document.getElementById("increase")
-var decrea = document.getElementById("decrease")
-var incremented = function(){};
-var decremented = function(){};
-increa.addEventListener("click", incremented);
-decrea.addEventListener("click", "decremented");
+
+
+// var increa = document.getElementById("increase")
+//     var decrea = document.getElementById("decrease")
+//     var incremented = function(){};
+//     var decremented = function(){};
+//     increa.addEventListener("click", incremented);
+//     decrea.addEventListener("click", "decremented");
 
 
 
 
+    
+    var images = ["smooth-images/1.jpg", "smooth-images/2.png", "smooth-images/3.png", "smooth-images/4.jpg", "smooth-images/5.jpg", "smooth-images/6.jpg"];
+    var currentImage = 0;
 
+    var jumboImage = document.getElementById("major-image")
+    var next = document.querySelector(".next");
+    var prev = document.querySelector(".prev");
+
+    next.addEventListener("click", nextPhoto);
+    function nextPhoto(){
+      currentImage ++;
+      if(currentImage > images.length -1){
+        currentImage = 0
+      }
+      jumboImage.src = images[currentImage]
+    }
+
+    prev.addEventListener("click", prevPhoto);
+    function prevPhoto(){
+      currentImage --;
+      if(currentImage < 0){
+        currentImage = images.length - 1
+      }
+      jumboImage.src = images[currentImage]
+    }
+    
+
+console.log(images[4])
+console.log(currentImage)
+console.log(jumboImage)
+console.log(next)
+
+var name = "israel"
+console.log(name)
 
 
 

@@ -220,7 +220,7 @@ img{
 }
 .major-image{
     width: 100%;
-    border: 2px dotted green;
+    border: 2px dotted red;
 }
 .divi-container{
     justify-content: space-between;
@@ -229,23 +229,24 @@ img{
     position: relative;
 }
 .prev, .next{
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
     color: red;
     top: 50%;
-    
+    background-color: rgb(100, 96, 96);
+    padding: 4px;
 }
-.next1{
-    left: 9%;
+.next{
+    right: 0%;
 }
 .prev{
-    right: 95%;
+    left: 0%;
 }
 .next:hover, .prev:hover{
-    color: black;
-    background-color: red;
+    border: 2px solid rgb(100, 96, 96);
+    color: red;
+    background-color: transparent;
     cursor: pointer;
-    border-radius: 0 3px 3px 0;
     text-decoration: underline;
     
     
