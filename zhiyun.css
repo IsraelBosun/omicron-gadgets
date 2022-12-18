@@ -230,11 +230,11 @@ img{
     
 }
 .prev, .next{
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     color: red;
     top: 50%;
-    background-color: rgb(100, 96, 96);
+    background-color: rgb(199, 194, 194);
     padding: 4px;
 }
 .next{

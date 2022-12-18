@@ -125,78 +125,48 @@ otherImages[5].onmousemove = testing
 
 
 
+    //(function(){
 
+      "use strict"
+      var images = ["smooth-images/1.jpg", "smooth-images/2.png", "smooth-images/3.png", "smooth-images/4.jpg", "smooth-images/5.jpg", "smooth-images/6.jpg"];
+          var container = document.getElementById("main-image")
+          var currentImage = 0;
+
+          var jumboImage = document.getElementById("major-image")
+          var next = document.querySelector(".next");
+          var prev = document.querySelector(".prev");
+      
+
+      next.addEventListener("click", function(e){
+        e.preventDefault();
+        currentImage ++;
+        if (currentImage > (images.length - 1)){
+          currentImage = 0;
+        }
+        var newSlide = document.createElement("img");
+        newSlide.src = images[currentImage];
+        newSlide.className = "fadeIn";
+        container.replaceChild(newSlide, container.childNodes[1]);
+        // if (container.children.length > 1){
+        //   container.removeChild(container.children[0])
+        // }
+      })
+
+      prev.addEventListener("click", function(e){
+        e.preventDefault();
+        currentImage --;
+        if(currentImage < 0){
+          currentImage = images.length - 1
+        };
+        var newSlide = document.createElement("img");
+        newSlide.src = images[currentImage];
+        newSlide.className = "fadeIn"
+        container.replaceChild(newSlide, container.childNodes[1]);
+      })
+
+    //})();
     
-    var images = ["smooth-images/1.jpg", "smooth-images/2.png", "smooth-images/3.png", "smooth-images/4.jpg", "smooth-images/5.jpg", "smooth-images/6.jpg"];
-    var container = document.getElementById("main-image")
-    var currentImage = 0;
-
-    var jumboImage = document.getElementById("major-image")
-    var next = document.querySelector(".next");
-    var prev = document.querySelector(".prev");
-
-//     next.addEventListener("click", nextPhoto);
-//     function nextPhoto(){
-//       // e.preventDefult()
-//       currentImage ++;
-//       if(currentImage > images.length -1){
-//         currentImage = 0
-//       }
-//       var hover = document.createElement("img")
-//       hover.className = "fadeIn"
-//       container.appendChild(hover);
-//       hover.src = images[currentImage]
-//       if(container.children.length >2){
-//         container.removeChild(container.children[0])
-//       }
-//       console.log(hover)
-//       //jumboImage.src = images[currentImage]
-//     }
-
-//     prev.addEventListener("click", prevPhoto);
-//     function prevPhoto(){
-//       currentImage --;
-//       if(currentImage < 0){
-//         currentImage = images.length - 1
-//       }
-//       jumboImage.src = images[currentImage]
-//     }
     
-
-// console.log(images[4])
-// console.log(currentImage)
-// console.log(jumboImage)
-// console.log(next)
-
-// var name = "israel"
-// console.log(name)
-
-next.addEventListener("click", function(e){
-  e.preventDefault();
-  currentImage ++;
-  if (currentImage > (images.length - 1)){
-    currentImage = 0;
-  }
-  var newSlide = document.createElement("img");
-  newSlide.src = images[currentImage];
-  newSlide.className = "fadeIn";
-  container.replaceChild(newSlide, container.childNodes[1]);
-  // if (container.children.length > 1){
-  //   container.removeChild(container.children[0])
-  // }
-})
-
-prev.addEventListener("click", function(e){
-  e.preventDefault();
-  currentImage --;
-  if(currentImage < 0){
-    currentImage = images.length - 1
-  };
-  var newSlide = document.createElement("img");
-  newSlide.src = images[currentImage];
-  newSlide.className = "fadeIn"
-  container.replaceChild(newSlide, container.childNodes[1]);
-})
 
 
 
