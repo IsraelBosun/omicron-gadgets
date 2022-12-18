@@ -227,6 +227,7 @@ img{
 }
 .main-image{
     position: relative;
+    
 }
 .prev, .next{
     font-size: 30px;
@@ -250,6 +251,20 @@ img{
     text-decoration: underline;
     
     
+}
+.fadeIn{
+    animation: fadee 1s;
+    width: 525px;
+    border: .6px dotted red;
+    width: 100%;
+}
+@keyframes fadee {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
